@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Chrome Extension</title>
+  <script type="text/javascript" src="./popup.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' blob: filesystem:;">
+  
+</head>
+<body class="p-3 text-center" style="min-width: 300px;">
+  <div class="blockquote bg-light p-3 mb-3">
+    <h4 class="h4">Ask It</h4>
+  </div>
+  <div class="form-group text-left">
+    <label for="question">Enter a question:</label>
+    <input type="text" class="form-control" id="question" name="question">
+  </div>
+  <div class="form-group mt-3 text-left">
+    <label for="answer">Answer:</label>
+    <p style="min-height: 5rem;" class="form-control" id="answer" rows="3" readonly></p>
+  </div>
+  <button class="btn btn-primary" id="myButton">Send</button>
+  <script type="text/javascript" src="./popup.js"></script>
+</body>
+</html>
